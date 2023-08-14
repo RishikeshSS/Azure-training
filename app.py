@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Azure Blob Storage configurations
 account_name = "azuretrainingrishi"
-account_key = "9em4lIXPytARTcoTEZP+AQjg5SyJkMEGIOziPeejUW6ijd9oKpJERW1+xoXLG2zb+CAG5N/6L0zb+AStr+2KPA=="
+account_key = "srwWW0okVrU1INQCiWt6cx7UhdX5DklYvpFGdBKP53iTmIbQkvN//uXpRmYQkTJMKoJJeGO66Gvo+AStiyyzFA=="
 container_name = "container1"
 
 
