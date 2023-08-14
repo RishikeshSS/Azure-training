@@ -1,0 +1,13 @@
+{
+    "terminal.integrated.en": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+}
