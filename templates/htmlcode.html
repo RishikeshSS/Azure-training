@@ -6,10 +6,9 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body>
-    <div class="Topic">
-        <h1>Listing files from folders on the azure created container</h1>
-    </div>
+<body style="text-align:center">
+    <h1>Azure Training</h1>
+    <h3>Listing files from folders on the azure created container</h3>
     <form method="POST">
         <label for="folder_name">Select Folder:</label>
         <select id="folder_name" name="folder_name">
@@ -21,13 +20,15 @@
         <button type="submit">Show Files</button>
     </form>
     {% if folder_name %}
-    <h2>Files in {{ folder_name }}:</h2>
-    <ul>
-        {% for blob in blobs %}
-        <li>{{ blob }}</li>
-        {% endfor %}
-    </ul>
-    <h4>If you need to check other folders, return to the previous page and select an option</h4>
+    <div class="Response">
+        <h2>Files in {{ folder_name }}:</h2>
+        <ul>
+            {% for blob in blobs %}
+            <li>{{ blob }}</li>
+            {% endfor %}
+        </ul>
+        <h4>If you need to check other folders, return to the previous page and select an option</h4>
+    </div>
     {% endif %}
 </body>
 
